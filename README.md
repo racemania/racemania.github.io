@@ -1,1 +1,2 @@
-# racemania.github.io
+# racemania-website
+racemania-website

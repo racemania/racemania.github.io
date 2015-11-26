@@ -1,0 +1,469 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Game,Free to Play,Racing,Simulation, Sports, official,RaceMania,GP,Grand Prix,3D,car,race,track, app store,ios,iphone,ipad,ipod,news" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<title>Official site of the Racemania GP</title>
+<meta name="description" content="Official site of the Racemania GP" />
+ 
+
+<link href="css/style.css?v=20130322" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="js/menubar/css/superfish.css" media="screen" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jcarousellite_1.0.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/menubar/superfish.js"></script>
+
+<script type="text/javascript" language="javascript" src="js/jquery-ui/js/jquery-ui-1.7.2.custom.min.js"></script>
+<link type="text/css" rel="stylesheet" href="js/jquery-ui/css/ui-lightness/jquery-ui-1.7.2.custom.css" media="screen" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss.asp" />
+
+<script type="text/javascript" language="javascript" src="js/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+<link href="js/fancybox/jquery.fancybox-1.2.6.css" rel="stylesheet" type="text/css">
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47844328-1', 'racemaniapocket.com');
+  ga('send', 'pageview');
+
+</script>  
+
+</head>
+<body>
+	<div id="page-wrapper">
+    	<!-- header -->
+<div id="header">
+    <div id="header-container">
+    	<div id="header-content">
+                <a href="index.htm" title="Homepage" id="logo"></a>
+				<a href="index.htm" title="Homepage" id="logo-people"></a>
+                <ul class="logosheader">
+                	<li><a id="logo-fia-eurosport" target="_blank"></a></li>   
+                </ul>                
+            	<br class="clear-both" />
+        	<div id="header-date">Powered by RaceLight Lab</div> 
+    	</div>
+    </div>
+</div>
+<!-- /header -->
+        
+        <!-- main container -->
+      	<div id="main-container">
+            <!-- header menu -->
+<div id="header-menu">
+	<ul class="sf-menu sf-js-enabled" id="sf-menu-home">
+    	<li><a href="index.htm">HOME</a></li>
+    	<li><a >GAME INFO</a></li>
+    	<li><a >REPLAYS</a></li>   
+    	<li><a >RANKINGS</a></li> 
+        <li><a >SHOP</a></li>
+        <li class=" "><a style="background-position: center 60px;" href="index.htm">MEDIA</a>
+        	<ul class="sf-js-enabled">
+        		<li class=" "><a href="index.htm">Screenshots</a></li> 
+        		<li><a href="index.htm">Video</a></li> 
+            </ul>
+        </li>
+        <li><a href="index.htm">DOWNLOADS</a></li>
+        <li class="sf-last"><a href="../forum/index.php">FORUM</a>
+        </li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function() { 
+        jQuery('#header-menu ul').superfish({
+				delay:			0,
+				animation:		{ height: 'show' },
+				speed:      	0, 
+				dropShadows:	false,
+				autoArrows:		false,
+				onShow:			function(){
+									jQuery(this).parent().find('a:first').css({'background-position': 'center bottom'});
+								},
+				onHide:			function(){
+									jQuery(this).parent().find('a:first').css({'background-position': 'center 60px'});
+								}
+		}); 
+    }); 
+</script>
+
+  
+
+ 
+<!-- /header menu -->
+            <div class="clearfix"></div>
+            <div class="slideandvideo">
+            	<div id="sliderhome">
+	<a class="arrow-right" href="#">Arrow Left</a>
+	<!-- screenshots big --> 
+    <ul>
+
+    <li class="boxslide">
+    	<img src="uploadedFiles/1.jpg" alt="" border="0"  width="650">        
+   	</li>
+    
+    <li class="boxslide">
+        <img src="uploadedFiles/2.jpg" alt="" border="0"  width="650" >        
+    </li>
+
+    <li class="boxslide">
+        <img src="uploadedFiles/3.jpg" alt="" border="0"  width="650">        
+    </li>
+
+    <li class="boxslide">
+        <img src="uploadedFiles/4.jpg" alt="" border="0"  width="650">        
+    </li>
+
+    <li class="boxslide">
+        <img src="uploadedFiles/5.jpg" alt="" border="0"  width="650">        
+    </li>
+
+
+	<!-- /screenshots big -->
+    </ul>
+	<a class="arrow-left" href="#">Arrow Right</a>
+</div>
+
+<script language="javascript">
+	function setheWidth() {
+		$(".boxslide").fadeIn().each(function(){
+			$(this).css({ left:  650} );
+		});
+		$('#sliderhome .boxslide:first-child').addClass("active").css({ left: 0});
+	}
+	function checkleft() {
+		if ( $("li.boxslide:first-child").hasClass("active") ) { 
+				$( ".arrow-left" ).unbind('click');
+			}
+		else {
+			$( ".arrow-left" ).bind('click', leftclick);
+		}
+	}
+	function checkright() {
+		if ( $("li.boxslide:last-child").hasClass("active") ) { 
+			$( ".arrow-right" ).unbind('click');
+			}
+		else {
+			$( ".arrow-right" ).bind('click', rightclick);
+		}
+	}
+	var rightclick = function() {
+		$( "li.boxslide.active" ).removeClass("active").animate( { left: -boxWidth }, { queue: false, duration: 1000 }).next().addClass("active").animate( { left: 0 }, { queue: false, duration: 1000 }).clearQueue();
+		checkright();
+		checkleft();
+	}
+	var leftclick = function() {
+		$( "li.boxslide.active" ).removeClass("active").animate( { left: boxWidth }, { queue: false, duration: 1000 }).prev().addClass("active").animate( { left: 0 }, { queue: false, duration: 1000 }).clearQueue();
+		checkleft();
+		checkright();
+	}
+	$(window).load(function(){
+		boxWidth = 650;
+		setheWidth();
+		checkright();
+		checkleft();
+	});
+</script>
+
+<div id="videogalleryhp"> 
+  <h2>Video Gallery</h2>
+	<div class="container-videohp">
+        <div class="boxvideo-home"> 
+        <!-- -->
+			<iframe id="player" type="text/html" width="280" height="240"
+            
+				  src="http://www.youtube.com/embed/l693P4SDESAxxx?enablejsapi=1&hd=1&theme=light&rel=0&showinfo=0"frameborder="0"></iframe>
+        </div>   
+    </div>
+</div>
+
+<script type="text/javascript">
+	jQuery(".vidoehover, .iframe").fancybox({
+		'frameWidth': 			800,
+		'frameHeight': 			450,
+		'overlayOpacity':	0.5,
+		'overlayColor':		'#CCC'
+	});
+	-->
+</script>
+            </div>    
+        	<!-- left container -->
+            <div id="left-container">
+            	<div id="left-content">
+<!-- /game info -->
+<div class="page-title box-title" id="newsbig-home-title">Game Info&nbsp;&nbsp;</div>
+<ul id="content-newsmedium">
+
+<li class="content-newsmedium-item"> 
+    <a class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/1.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">ABOUT</a>
+    </div>
+    <p>Racemania GP is the first edition of ultimate 3D racing game made just for mobile.</p>
+    <p> It is not about who has the best car, its about who is the BEST RACER.</p>
+
+</li>
+
+<li class="content-newsmedium-item"> 
+    <a  class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/2.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">SOLO MODE</a>
+    </div>
+    <p>In solo mode player is racing against the clock to try and beat current records. Player have to reach   finish line as fast as possible.Your only mission: Pass the checkpoints! Your main challenge is the clock, and only fast and focused driving for each track will allow you to beat best times. There are 4 records to beat: BRONZE medal, SILVER medal, GOLD medal and finally AUTHOR TIME. It is always possible to return to the starting line or the checkpoint. </p>
+</li>
+
+<li class="content-newsmedium-item">
+    <a  class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/3.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">RACE ON  30 CHALLENGING TRACKS</a>
+    </div>
+    <p>Race on 30 tracks organized in 3 Grand Prix  - and that's just the starting line. Every track is carefully designed for fast and technical driving at the same time. Race time is less than 1 minute for each track!  Win medals to unlock stages. </p>
+</li>
+
+<li class="content-newsmedium-item">
+    <a  class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/4.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">WATCH AND SHARE REPLAY WITH FRIENDS </a>
+    </div>
+    <p>Watch and share race replays with friends.</p>
+</li>
+
+<li class="content-newsmedium-item"> 
+    <a class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/5.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">MULTIPLE CONTROL SCHEMES </a>
+    </div>
+    <p>7 available control schemes. And there is more: In-game adjust and customization for each scheme!</p>
+
+</li>
+
+<li class="content-newsmedium-item"> 
+    <a class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/6.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">Over 90 Available Countries</a>
+    </div>
+    <p>OVER 90 AVAILABLE COUNTRIES to choose. More coming soon. Car is painted using player country. We respect and love difference. 	
+	</p>
+
+</li>
+
+<li class="content-newsmedium-item"> 
+    <a class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/7.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">CUTTING-EDGE GRAPHICS.</a>
+    </div>
+    <p>Beautiful graphics with modern 3D graphics engine , using hardware maximum capability.  	
+	</p> 
+</li>
+
+<li class="content-newsmedium-item"> 
+    <a class="newsmedium-photo"><img src="uploadedFiles/NewsImg/thumbs/8.jpg" class="newsmedium-frame" alt="" border="0" width="140" /></a>
+    <div class="newsmedium-text">
+        <a class="newsmedium-title">STATE-OF-THE-ART CAR PHYSICS</a> 
+    </div>
+    <p>Real gem. Tuned for really easy drive, but you will really drive same track many times until master track. Jumps? Stunts? Drift? No problem.  	
+	</p>
+</li>
+
+
+</ul>				
+
+				</div>
+ 				
+               <div class="bannerwtcc"><a target="_blank"><img border="0" alt="" src="img/rmlogo.png" /></a></div>
+
+            </div>
+        	<!-- /left container -->
+            
+        	<!-- right container -->
+            <div id="right-container">
+			
+            	<div id="right-content">
+					
+
+<div class="block-right" style="display: none; visibility: hidden;">
+	<a href="standings.asp" class="box-title" id="standings-title">Standings</a>
+	<!-- standings-block-s2000 -->
+    <div class="block-right-content standings-content" id="standing-content-super2000">
+    	
+        <div class="standings-list" id="standings-list-s2000">
+        	<span class="standings-list-class">Super 2000</span>
+        	
+            <br class="clear-both" />
+    		<!-- standings s2000 qualifying -->
+            <div id="standings-s2000-1">
+        		<div class="standings-list-head"><span class="standings-list-num">#</span><span class="standings-list-name">DRIVER</span><span class="standings-list-flag">NAT</span><span class="standings-list-points">POINTS</span></div>
+			
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">1.</span><span class="standings-list-name">Petr Fulín</span><span class="standings-list-flag"><img src="/flags/CZ.gif" alt="CZ" /></span><span class="standings-list-points">88 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">2.</span><span class="standings-list-name">Mat'o Homola</span><span class="standings-list-flag"><img src="/flags/SK.gif" alt="SK" /></span><span class="standings-list-points">74 pt.</span></div>
+            
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">3.</span><span class="standings-list-name">Dušan Borkovi&#263;</span><span class="standings-list-flag"><img src="/flags/RS.gif" alt="RS" /></span><span class="standings-list-points">48 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">4.</span><span class="standings-list-name">Peter Rikli</span><span class="standings-list-flag"><img src="/flags/CH.gif" alt="CH" /></span><span class="standings-list-points">40 pt.</span></div>
+            
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">5.</span><span class="standings-list-name">Michal Mat&#277;jovský</span><span class="standings-list-flag"><img src="/flags/CZ.gif" alt="CZ" /></span><span class="standings-list-points">35 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">6.</span><span class="standings-list-name">Andrina Gugger</span><span class="standings-list-flag"><img src="/flags/CH.gif" alt="CH" /></span><span class="standings-list-points">32 pt.</span></div>
+            
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">7.</span><span class="standings-list-name">Igor Skuz</span><span class="standings-list-flag"><img src="/flags/UA.gif" alt="UA" /></span><span class="standings-list-points">25 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">8.</span><span class="standings-list-name">Christian Fischer</span><span class="standings-list-flag"><img src="/flags/CH.gif" alt="CH" /></span><span class="standings-list-points">18 pt.</span></div>
+            
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">9.</span><span class="standings-list-name">Roland Hertner</span><span class="standings-list-flag"><img src="/flags/DE.gif" alt="DE" /></span><span class="standings-list-points">16 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">10.</span><span class="standings-list-name">Mikhail Grachev</span><span class="standings-list-flag"><img src="/flags/RU.gif" alt="RU" /></span><span class="standings-list-points">14 pt.</span></div>
+            
+         	</div>
+    		<!-- /standings s2000 qualifying -->
+            
+            
+         </div>
+    </div>
+    <!-- /standings-block-s2000 -->
+    <!-- standings-block-s1600 -->
+	<div class="block-right-content standings-content">
+    	<div class="standings-list" id="standings-list-s1600">
+        	<span class="standings-list-class">Super 1600</span>
+        	
+            
+            <br class="clear-both" />
+    		<!-- standings s1600 qualifying -->
+            <div id="standings-s1600-1">
+        		<div class="standings-list-head"><span class="standings-list-num">#</span><span class="standings-list-name">DRIVER</span><span class="standings-list-flag">NAT</span><span class="standings-list-points">POINTS</span></div>
+			
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">1.</span><span class="standings-list-name">Kevin Krammes</span><span class="standings-list-flag"><img src="/flags/DE.gif" alt="DE" /></span><span class="standings-list-points">100 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">2.</span><span class="standings-list-name">Gilles Bruckner</span><span class="standings-list-flag"><img src="/flags/LU.gif" alt="LU" /></span><span class="standings-list-points">74 pt.</span></div>
+            
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">3.</span><span class="standings-list-name">Ulrike Krafft</span><span class="standings-list-flag"><img src="/flags/DE.gif" alt="DE" /></span><span class="standings-list-points">58 pt.</span></div>
+            
+         	</div>
+    		<!-- /standings s1600 qualifying -->
+            
+         </div>
+    </div>
+    <!-- /standings-block-s1600 -->
+    <!-- standings-block-sp -->
+	<div class="block-right-content standings-content">
+        <div class="standings-list" id="standings-list-sp">
+        	<span class="standings-list-class">Ladies'Trophy</span>
+        	
+            
+            <br class="clear-both" />
+    		<!-- standings sp qualifying -->
+            <div id="standings-sp-1">
+        		<div class="standings-list-head"><span class="standings-list-num">#</span><span class="standings-list-name">DRIVER</span><span class="standings-list-flag">NAT</span><span class="standings-list-points">POINTS</span></div>
+			
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">1.</span><span class="standings-list-name">Andrina Gugger</span><span class="standings-list-flag"><img src="/flags/CH.gif" alt="CH" /></span><span class="standings-list-points">70 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">2.</span><span class="standings-list-name">Ulrike Krafft</span><span class="standings-list-flag"><img src="/flags/DE.gif" alt="DE" /></span><span class="standings-list-points">63 pt.</span></div>
+            
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">3.</span><span class="standings-list-name">Ksenya Niks</span><span class="standings-list-flag"><img src="/flags/UA.gif" alt="UA" /></span><span class="standings-list-points">17 pt.</span></div>
+            
+         	</div>
+    		<!-- /standings sp qualifying -->
+            
+            
+         </div>
+    
+    </div>
+    <!-- /standings-block-sp -->
+	<!-- standings-block-smt -->
+	<div class="block-right-content standings-content last">
+    	<div class="standings-list" id="standings-list-smt">
+        	<span class="standings-list-class">Single-Make-Trophy</span>
+        	
+            
+            <br class="clear-both" />
+    		<!-- standings smt qualifying -->
+            <div id="standings-smt-1">
+        		<div class="standings-list-head"><span class="standings-list-num">#</span><span class="standings-list-name">DRIVER</span><span class="standings-list-flag">NAT</span><span class="standings-list-points">POINTS</span></div>
+			
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">1.</span><span class="standings-list-name">Mario Dablander</span><span class="standings-list-flag"><img src="/flags/AT.gif" alt="AT" /></span><span class="standings-list-points">69 pt.</span></div>
+            
+                <div class="standings-list-item item-row-even"><span class="standings-list-num">2.</span><span class="standings-list-name">Aurélien Comte</span><span class="standings-list-flag"><img src="/flags/FR.gif" alt="FR" /></span><span class="standings-list-points">61 pt.</span></div>
+            
+                <div class="standings-list-item item-row-odd"><span class="standings-list-num">3.</span><span class="standings-list-name">Jordi Oriola</span><span class="standings-list-flag"><img src="/flags/ES.gif" alt="ES" /></span><span class="standings-list-points">54 pt.</span></div>
+            
+         	</div>
+    		<!-- /standings smt qualifying -->
+            
+         </div>
+    </div>
+    <!-- /standings-block-smt -->
+
+</div>
+                </div>
+                
+            	<div class="other-blocks-right">
+				
+<div class=" ">
+    <div >
+	    <a href="https://itunes.apple.com/us/app/racemania-gp/id1059014048" title="Homepage" id="appstore"></a>
+    </div>	
+</div>	
+                
+					<!-- box partners -->
+<div class="other-block-right partners">
+	<h4>Partners</h4>
+
+    <div id="partners-mask-container">
+    	<img src="img/partners/mask.png" class="partners-mask" alt="" />
+        <div id="partners-scroller">
+            <ul>
+                <li><img src="img/partners/logo-yokohama.jpg" alt="Yokohama" /></li>
+                <!--<li><img src="img/partners/logo-redbull.jpg" alt="Red Bull" /></li>-->
+                <li><img src="img/partners/logo-advan.jpg" alt="Advan" /></li>
+                <li><img src="img/partners/logo-xotul.jpg" alt="Advan" /></li>
+            </ul>
+        </div>
+    </div>
+
+		
+	<script type="text/javascript">
+        <!-- 
+        jQuery("#partners-scroller").jCarouselLite({
+            auto: 4000, 
+            speed: 300,
+            visible: 1,
+            vertical: false
+        });
+        -->
+    </script>
+</div>
+
+<!-- /box partners -->
+
+                </div>
+			
+            </div>
+        	<!-- /right container -->
+            <div class="clearfix"></div>
+      	</div>
+        
+        <!-- /main container -->
+		<!-- footer -->
+<div class="clearfix"></div> 
+<div id="footer"> 
+     
+    <ul>
+    	<li><a> <b> racemaniagp@gmail.com </b> </a></li>
+    </ul>
+    
+    <div id="copyright">
+    	&copy; 2015 RaceMania GP. All Rights Reserved. Names and distinctive likenesses thereof are trademarks of respective trade markers.
+    </div>
+</div>
+<!-- /footer -->
+    </div>
+	
+</body>
+</html>
