@@ -47,6 +47,13 @@ display: inline;
 
 </script>  
 
+
+<script type="text/javascript">
+    function stop() {
+        document.getElementById("sound").src = "";
+    }
+</script>
+
 </head>
 <body>
 	<div id="page-wrapper">
@@ -193,6 +200,18 @@ display: inline;
         </div>   
     </div>
 </div>
+
+<div id="videogalleryhp"> 
+  <h2>Music</h2>
+    <div class="container-videohp">
+        <audio src="music/track1.mp3" controls autoplay loop="0" id="sound">
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
+    </div>
+
+</div>
+
+
 
 <script type="text/javascript">
 	jQuery(".vidoehover, .iframe").fancybox({
@@ -431,7 +450,7 @@ display: inline;
                 <li><img src="img/partners/logo-yokohama.jpg" alt="Yokohama" /></li>
                 <!--<li><img src="img/partners/logo-redbull.jpg" alt="Red Bull" /></li>-->
                 <li><img src="img/partners/logo-advan.jpg" alt="Advan" /></li>
-                <li><img src="img/partners/logo-xotul.jpg" alt="Advan" /></li>
+                <li><img src="img/partners/logo-xotul.jpg" alt="Xotul" /></li>
             </ul>
         </div>
     </div>
@@ -549,6 +568,8 @@ display: inline;
 </div>
 
 <!-- /follow us -->
+
+
 
 </div>
 			
